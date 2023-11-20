@@ -57,12 +57,12 @@ ListNode* removeElements(ListNode* head, int val) {
     }
     return head;
 }
-int main(){
-    ListNode* listNode= CreateLinkList({1,2,1,4,5,6});
-    cout<<"打印链表"<<endl;
-    PrintElements(listNode);
-    cout<<"删除元素"<<endl;
-    ListNode* last=removeElements(listNode,1);
-    PrintElements(last);
-
-}
+//int main(){
+//    ListNode* listNode= CreateLinkList({1,2,1,4,5,6});
+//    cout<<"打印链表"<<endl;
+//    PrintElements(listNode);
+//    cout<<"删除元素"<<endl;
+//    ListNode* last=removeElements(listNode,1);
+//    PrintElements(last);
+//
+//}

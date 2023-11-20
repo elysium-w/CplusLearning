@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(CplusLearning
         DataStructure/LinkList/RemoveElements.cpp
-        DesignPattern/Proxy/ProxyLearning.cpp)
+        DesignPattern/Proxy/ProxyLearning.cpp
+        DataStructure/LinkList/LinkListCircle.cpp)
