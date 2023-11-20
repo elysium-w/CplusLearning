@@ -3,4 +3,6 @@ project(CplusLearning)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CplusLearning main.cpp)
+add_executable(CplusLearning
+        DataStructure/LinkList/RemoveElements.cpp
+        DesignPattern/Proxy/ProxyLearning.cpp)
