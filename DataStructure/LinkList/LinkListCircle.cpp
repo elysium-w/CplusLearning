@@ -13,13 +13,9 @@
 */
 #include <initializer_list>
 #include <iostream>
-
+#include "func.h"
 using namespace std;
-struct ListNode{
-    int val;
-    ListNode* next;
-    ListNode(int x):val(x),next(nullptr){}
-};
+
 ListNode *detectCycle(ListNode *head) {
     //定义快慢指针
     ListNode* fast=head;
@@ -67,10 +63,4 @@ void printCircle(ListNode* head, int n) {
         current = current->next;
     }
     std::cout << std::endl;
-}
-int main(){
-    ListNode* circle = createCircle({1, 2, 3, 4, 5});
-    // 打印环形链表的前10个节点
-    printCircle(circle, 10);
-
 }

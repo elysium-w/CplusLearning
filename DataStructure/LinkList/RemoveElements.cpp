@@ -3,14 +3,10 @@
 //
 
 #include <iostream>
-
+#include "func.h"
 using namespace std;
 //定义链表结构
-struct ListNode{
-    int Val;
-    ListNode * Next;
-    ListNode(int x):Val(x),Next(nullptr){}
-};
+
 //创建链表
 ListNode* CreateLinkList(initializer_list<int> values){
     ListNode* head= nullptr;
@@ -21,7 +17,7 @@ ListNode* CreateLinkList(initializer_list<int> values){
             head=newVal;
             tail=newVal;
         } else{
-            tail->Next=newVal;
+            tail->next=newVal;
             tail=newVal;
         }
     }
@@ -31,28 +27,28 @@ ListNode* CreateLinkList(initializer_list<int> values){
 void PrintElements(ListNode *head){
     ListNode* cur=head;
     while (cur!= nullptr){
-        cout<<cur->Val<< " ";
-        cur=cur->Next;
+        cout<<cur->val<< " ";
+        cur=cur->next;
     }
     cout<<endl;
 }
 //移除元素
 ListNode* removeElements(ListNode* head, int val) {
 //删除头结点
-    while (head!= nullptr&&head->Val==val){
+    while (head!= nullptr&&head->val==val){
         ListNode* tmp=head;
-        head=head->Next;
+        head=head->next;
         delete tmp;
     }
     ListNode* cur=head;
     //删除非头结点
-    while (cur!= nullptr&&cur->Next!= nullptr){
-        if (cur->Next->Val==val){
-            ListNode* tmp=cur->Next;
-            cur->Next=cur->Next->Next;
+    while (cur!= nullptr&&cur->next!= nullptr){
+        if (cur->next->val==val){
+            ListNode* tmp=cur->next;
+            cur->next=cur->next->next;
             delete tmp;
         }else{
-            cur=cur->Next;
+            cur=cur->next;
         }
     }
     return head;
