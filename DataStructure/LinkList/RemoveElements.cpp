@@ -6,32 +6,6 @@
 #include "func.h"
 using namespace std;
 //定义链表结构
-
-//创建链表
-ListNode* CreateLinkList(initializer_list<int> values){
-    ListNode* head= nullptr;
-    ListNode* tail= nullptr;
-    for (int val:values) {
-        ListNode* newVal=new ListNode(val);
-        if (!head){
-            head=newVal;
-            tail=newVal;
-        } else{
-            tail->next=newVal;
-            tail=newVal;
-        }
-    }
-    return head;
-}
-//打印链表
-void PrintElements(ListNode *head){
-    ListNode* cur=head;
-    while (cur!= nullptr){
-        cout<<cur->val<< " ";
-        cur=cur->next;
-    }
-    cout<<endl;
-}
 //移除元素
 ListNode* removeElements(ListNode* head, int val) {
 //删除头结点

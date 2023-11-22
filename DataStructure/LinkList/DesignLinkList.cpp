@@ -49,12 +49,12 @@ void MyLinkedList::addAtIndex(int index, int val) {
     ListNode* newNode=new ListNode(val);
     ListNode* cur =_header;
     //首先排除不合法情况
-    if (index>_size-1) return;
+    if (index>_size) return;
     //判断节点的位置,为头结点，中间节点还是尾节点
     if (index==0) {
-        newNode->next=_header->next;
-        _header->next=newNode;
-        _size++;
+        addAtHead(val);
+    } else if (index==_size){
+        addAtTail(val);
     }
     while (index--){
         cur=cur->next;

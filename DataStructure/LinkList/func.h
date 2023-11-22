@@ -4,6 +4,9 @@
 
 #ifndef CPLUSLEARNING_FUNC_H
 #define CPLUSLEARNING_FUNC_H
+
+#include <initializer_list>
+
 struct ListNode{
     int val;
     ListNode* next;
@@ -11,12 +14,13 @@ struct ListNode{
 };
 //创建链表
 ListNode* CreateLinkList(std::initializer_list<int> values);
-ListNode* removeNthFromEnd(ListNode* head, int n);
-//移除元素
-ListNode* removeElements(ListNode* head, int val);
+//打印链表
+void PrintElements(ListNode *head);
 ListNode *detectCycle(ListNode *head);
 ListNode *createCircle(std::initializer_list<int> values);
-
+//移除元素
+ListNode* removeElements(ListNode* head, int val);
+ListNode* removeNthFromEnd(ListNode* head, int n);
 //设计链表
 class MyLinkedList{
 public:
@@ -26,7 +30,6 @@ public:
     void addAtTail(int val) ;
     void addAtIndex(int index, int val) ;
     void deleteAtIndex(int index) ;
-
 private:
     ListNode *_header;
     int _size;

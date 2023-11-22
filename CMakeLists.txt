@@ -12,4 +12,5 @@ add_executable(CplusLearning
         DataStructure/LinkList/func.h
         DataStructure/LinkList/DesignLinkList.cpp
         Disk/filStruct.h
+        DataStructure/LinkList/LinkListOperation.cpp
 )

@@ -37,30 +37,5 @@ ListNode *detectCycle(ListNode *head) {
     }
     return nullptr;
 }
-ListNode *createCircle(initializer_list<int> values){
-    ListNode* head= nullptr;
-    ListNode* tail= nullptr;
-    for (int val:values) {
-        ListNode* newNode=new ListNode(val);
-        if (!head){
-            head=newNode;
-            tail=newNode;
-        }else{
-            tail->next=newNode;
-            tail=newNode;
-        }
-    }
-    //链接最后一个节点与首节点
-    if (tail){
-        tail->next=head;
-    }
-    return head;
-}
-void printCircle(ListNode* head, int n) {
-    ListNode* current = head;
-    for (int i = 0; i < n; ++i) {
-        std::cout << current->val << " ";
-        current = current->next;
-    }
-    std::cout << std::endl;
-}
+
+
