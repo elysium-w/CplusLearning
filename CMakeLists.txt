@@ -10,4 +10,6 @@ add_executable(CplusLearning
         DataStructure/LinkList/RemoveNodeEndofList.cpp
         DataStructure/LinkList/main.cpp
         DataStructure/LinkList/func.h
-        DataStructure/LinkList/DesignLinkList.cpp)
+        DataStructure/LinkList/DesignLinkList.cpp
+        Disk/filStruct.h
+)
