@@ -16,7 +16,8 @@ int main(){
 //    std::cout << myLinkedList.get(1) << std::endl; // 输出 3
 
     ListNode* list= CreateLinkList({1,2,3,4,5});
-    ListNode* res=reverseList(list);
+    ListNode* res= removeNthFromEnd(list,2);
+//    ListNode* res=reverseList(list);
     PrintElements(res);
     return 0;
 }
