@@ -34,6 +34,6 @@ private:
     ListNode *_header;
     int _size;
 };
-
-
+//reverse list
+ListNode* reverseList(ListNode* head);
 #endif //CPLUSLEARNING_FUNC_H
