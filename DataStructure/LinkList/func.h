@@ -36,4 +36,8 @@ private:
 };
 //reverse list
 ListNode* reverseList(ListNode* head);
+//swap nodes
+ListNode* swapPairs(ListNode* head);
+//LUCCI
+ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
 #endif //CPLUSLEARNING_FUNC_H

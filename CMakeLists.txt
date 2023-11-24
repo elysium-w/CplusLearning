@@ -14,4 +14,7 @@ add_executable(CplusLearning
         Disk/filStruct.h
         DataStructure/LinkList/LinkListOperation.cpp
         DataStructure/LinkList/ReverseLinkList.cpp
+        DataStructure/LinkList/SwapNodes.cpp
+        DataStructure/LinkList/LCCI.cpp
+        bitedancing/simlarNote.cpp
 )

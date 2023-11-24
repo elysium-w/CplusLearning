@@ -15,9 +15,13 @@ int main(){
 //
 //    std::cout << myLinkedList.get(1) << std::endl; // 输出 3
 
-    ListNode* list= CreateLinkList({1,2,3,4,5});
-    ListNode* res= removeNthFromEnd(list,2);
+    ListNode* list= CreateLinkList({1,2,3,4});
+//    ListNode* res= removeNthFromEnd(list,2);
 //    ListNode* res=reverseList(list);
-    PrintElements(res);
+    ListNode* res= swapPairs(list);
+    ListNode* A= CreateLinkList({4,1,8,4,5});
+    ListNode* B= CreateLinkList({5,0,1,8,4,5});
+    ListNode* swap= getIntersectionNode(A,B);
+    PrintElements(swap);
     return 0;
 }
