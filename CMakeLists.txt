@@ -18,4 +18,6 @@ add_executable(CplusLearning
         DataStructure/LinkList/LCCI.cpp
         bitedancing/simlarNote.cpp
         DataStructure/Hash/ValidAnagram.cpp
+        DataStructure/Hash/main.cpp
+        DataStructure/Hash/funcAndStruct.h
 )
