@@ -11,7 +11,6 @@ add_executable(CplusLearning
         DataStructure/LinkList/main.cpp
         DataStructure/LinkList/func.h
         DataStructure/LinkList/DesignLinkList.cpp
-        Disk/filStruct.h
         DataStructure/LinkList/LinkListOperation.cpp
         DataStructure/LinkList/ReverseLinkList.cpp
         DataStructure/LinkList/SwapNodes.cpp
@@ -20,4 +19,7 @@ add_executable(CplusLearning
         DataStructure/Hash/ValidAnagram.cpp
         DataStructure/Hash/main.cpp
         DataStructure/Hash/funcAndStruct.h
+        Sort/HeapSort.cpp
+        Disk/fileIO.cpp
+        Disk/fileIO.h
 )

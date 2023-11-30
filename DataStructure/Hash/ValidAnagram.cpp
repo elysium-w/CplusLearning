@@ -14,5 +14,21 @@
 #include <string>
 using namespace std;
 bool isAnagram(string s, string t) {
+    int record[26]={};
+    for (int i = 0; i < s.size(); ++i) {
+        int tmp=s[i]-'a';
+        record[tmp]+=1;
+        tmp=0;
+    }
+    for (int j = 0; j < t.size(); ++j) {
+        int tmp=t[j]-'a';
+        record[tmp]-=1;
+    }
+    for (int k = 0; k < 26; ++k) {
+        if (record[k]!=0){
+            return false;
+        }
+    }
+        return true;
 
 }
