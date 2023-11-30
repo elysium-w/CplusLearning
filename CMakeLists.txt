@@ -23,4 +23,6 @@ add_executable(CplusLearning
         Disk/fileIO.cpp
         Disk/fileIO.h
         DataStructure/Hash/Intersection.cpp
+        DataStructure/Hash/HappyNum.cpp
+        DataStructure/Hash/AddOfTwo.cpp
 )
