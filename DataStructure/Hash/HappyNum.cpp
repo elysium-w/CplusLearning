@@ -1,6 +1,8 @@
 //
 // Created by illumwang on 11/30/23.
 //
+#include <unordered_set>
+
 /**
  * 快乐数」定义为：对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和，
  * 然后重复这个过程直到这个数变为 1，
@@ -19,9 +21,28 @@
 1^2 + 0^2 + 0^2 = 1
 #
  */
-bool isHappy(int n) {
 
-}
 int getSum(int n){
+    int sum=0;
+    while (n){
+        sum+=(n%10)*(n%10);
+        n/=10;
+    }
+    return sum;
+}
+bool isHappy(int n) {
+    std::unordered_set<int> set;
+    while (1){
+        int sum=getSum(n);
+        if (sum==1){
+            return true;
+        }
+        if (set.find(sum)!=set.end()){
+            return false;
+        } else{
+            set.insert(sum);
+        }
+        n=sum;
+    }
 
 }
