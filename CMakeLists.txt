@@ -25,4 +25,8 @@ add_executable(CplusLearning
         DataStructure/Hash/Intersection.cpp
         DataStructure/Hash/HappyNum.cpp
         DataStructure/Hash/AddOfTwo.cpp
+        Meituan/first/Booking.cpp
+        DataStructure/Array/BinarySearch.cpp
+        DesignPattern/AustructFactory/FactoryTest.cpp
+        DataStructure/Hash/SumOfForNum.cpp
 )
