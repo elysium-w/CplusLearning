@@ -29,4 +29,5 @@ add_executable(CplusLearning
         DataStructure/Array/BinarySearch.cpp
         DesignPattern/AustructFactory/FactoryTest.cpp
         DataStructure/Hash/SumOfForNum.cpp
+        DataStructure/Hash/RansomNode.cpp
 )
